@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的作品集网站</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <!-- 顶部导航 -->
+    <nav class="portfolio-nav">
+      <div class="brand">我的作品集</div>
+      <div class="nav-links">
+        <a href="#about">关于我</a>
+        <a href="#skills">技能</a>
+        <a href="#todo">Todo</a>
+        <a href="#projects">项目</a>
+      </div>
+    </nav>
+
+    <!-- Hero 首页区域 -->
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Portfolio Website</p>
+        <h1>你好，我是 ZHOUT</h1>
+        <p>我正在使用 Codex 学习网页开发</p>
+        <div class="hero-actions">
+          <button class="hero-project-button" id="projectScrollButton" type="button">查看我的项目</button>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换主题">☀️</button>
+        </div>
+      </div>
+      <div class="hero-highlights">
+        <div class="portfolio-visual">
+          <img src="portfolio-preview.png" alt="作品集网站预览图">
+        </div>
+        <div class="highlight-card">
+          <strong>前端练习</strong>
+          <span>用 HTML、CSS 和 JavaScript 构建可交互页面。</span>
+        </div>
+        <div class="highlight-card">
+          <strong>AI 学习</strong>
+          <span>记录 Codex 和 AI 工具学习过程，持续迭代作品。</span>
+        </div>
+        <div class="highlight-card">
+          <strong>实用功能</strong>
+          <span>包含主题切换、项目详情和 Todo List 等交互模块。</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 关于我 -->
+    <section class="section about" id="about">
+      <h2>关于我</h2>
+      <div class="card about-card">
+        <div class="about-content">
+          <p>我是 ZHOUT，目前正在从0基础学习网页开发。我使用 Codex 辅助学习 HTML、CSS 和 JavaScript，并通过实战项目逐步提升自己的开发能力。</p>
+          <p>目前我已经完成了个人主页、主题切换、项目展示和 Todo List 等练习项目。</p>
+        </div>
+        <div class="about-summary">
+          <div class="about-summary-item">
+            <strong>学习方向</strong>
+            <span>网页开发</span>
+          </div>
+          <div class="about-summary-item">
+            <strong>正在使用</strong>
+            <span>Codex</span>
+          </div>
+          <div class="about-summary-item">
+            <strong>已完成练习</strong>
+            <span>4 个模块</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 我的技能 -->
+    <section class="section" id="skills">
+      <h2>我的技能</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>HTML</h3>
+          <p>负责网页结构</p>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <p>负责网页样式</p>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <p>负责网页交互</p>
+        </div>
+        <div class="skill">
+          <h3>Codex</h3>
+          <p>辅助生成和修改代码</p>
+        </div>
+        <div class="skill">
+          <h3>localStorage</h3>
+          <p>保存本地数据</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Todo List -->
+    <section class="section" id="todo">
+      <h2>待办事项 Todo List</h2>
+      <div class="card">
+        <form class="todo-form" id="todoForm">
+          <input class="todo-input" id="todoInput" type="text" placeholder="输入一个新任务">
+          <button class="todo-add-button" type="submit">添加</button>
+        </form>
+        <div class="todo-filters" id="todoFilters">
+          <button class="todo-filter-button active" type="button" data-filter="all">全部</button>
+          <button class="todo-filter-button" type="button" data-filter="active">未完成</button>
+          <button class="todo-filter-button" type="button" data-filter="completed">已完成</button>
+        </div>
+        <ul class="todo-list" id="todoList"></ul>
+      </div>
+    </section>
+
+    <!-- 我的项目 -->
+    <section class="section" id="projects">
+      <h2>我的项目</h2>
+      <div class="projects">
+        <article class="project-card">
+          <div>
+            <h3>个人网站</h3>
+            <p>我的第一个个人主页项目，包含关于我、技能展示、项目展示和主题切换功能。</p>
+          </div>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <h3>Todo List</h3>
+            <p>一个可以添加、删除和保存任务的待办事项小应用。</p>
+          </div>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>localStorage</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <h3>主题切换系统</h3>
+            <p>支持深色模式和浅色模式切换，并能记住用户选择。</p>
+          </div>
+          <div class="project-tech">
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>localStorage</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
+
